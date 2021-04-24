@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>Home</h1>
+
+    {% for value in data %}
+        Name: {{ value.name }}
+        Age: {{ value.age }}
+        <br>
+    {% endfor %}
+
 </body>
 </html>

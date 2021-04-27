@@ -1,27 +1,17 @@
 from django.shortcuts import render
+from django.views.generic.base import TemplateView
 
-data = [
-    {
-        "name": "Mehedi",
-        "age": 23
-    },
-    {
-        "name": "Munna",
-        "age": 25
-    },
-    {
-        "name": "Shamim",
-        "age": 22
-    },
-    {
-        "name": "Ador",
-        "age": 26
-    }
-]
+from .models import Blog
 
 
-def Home(request):
-    return render(request, "Home.html", {"data": data})
+class HomeView(TemplateView):
+    template_name = 'Blog/Home.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        context['data'] = Blog.objects.all()
+        return context
+
 
 
 def About(request):

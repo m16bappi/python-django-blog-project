@@ -16,6 +16,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.9 (Blog-bXPkYuNz)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="bootstrap-icons" level="application" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
@@ -25,7 +27,6 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/Blog/templates" />
         <option value="$MODULE_DIR$/templates" />
       </list>
     </option>

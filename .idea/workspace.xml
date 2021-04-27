@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
@@ -64,6 +64,8 @@
       <workItem from="1619286512540" duration="66000" />
       <workItem from="1619286588451" duration="383000" />
       <workItem from="1619287193929" duration="5355000" />
+      <workItem from="1619419415839" duration="2470000" />
+      <workItem from="1619509081010" duration="10842000" />
     </task>
     <servers />
   </component>

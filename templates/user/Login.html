@@ -1,0 +1,14 @@
+{% extends 'Base/Base.html' %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+    <form method="post" class="d-flex gap-3 flex-column">
+        {% csrf_token %}
+        {{ form | crispy }}
+        {% for error in form.non_fields_error %}
+            <p>{{ error }}</p>
+        {% endfor %}
+
+    <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+{% endblock %}

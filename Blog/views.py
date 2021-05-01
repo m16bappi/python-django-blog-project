@@ -11,8 +11,3 @@ class HomeView(TemplateView):
         context = super().get_context_data()
         context['data'] = Blog.objects.all()
         return context
-
-
-
-def About(request):
-    return render(request, "About.html", {})

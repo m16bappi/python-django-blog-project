@@ -14,11 +14,16 @@
 </head>
 <body class="container-fluid" style="margin: 0 auto; padding: 0">
 <nav class="navbar navbar-light mb-5 ps-2 shadow-sm" style="background-color: #ebebeb">
-    <div class=" container-lg">
+    <div class="container-lg">
         <a class="navbar-brand" href="/">Home</a>
         <div class="d-flex gap-2">
-            <a href="#" class="btn btn-primary">Login</a>
-            <a href="#" class="btn btn-warning">Register</a>
+            {% if user.is_authenticated %}
+                <h5>{{ user.username }}</h5>
+                <a class="btn btn-outline-danger" href="{% url 'logout' %}">logout</a>
+            {% else %}
+                <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+                <a href="{% url 'register' %}" class="btn btn-warning">Register</a>
+            {% endif %}
         </div>
     </div>
 </nav>

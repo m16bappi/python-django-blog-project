@@ -16,9 +16,9 @@
 <nav class="navbar navbar-light mb-5 ps-2 shadow-sm" style="background-color: #ebebeb">
     <div class="container-lg">
         <a class="navbar-brand" href="/">Home</a>
-        <div class="d-flex gap-2">
+        <div class="d-flex align-items-center gap-2">
             {% if user.is_authenticated %}
-                <h5>{{ user.username }}</h5>
+                <div class="h5 m-0">{{ user.username }}</div>
                 <a class="btn btn-outline-danger" href="{% url 'logout' %}">logout</a>
             {% else %}
                 <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
